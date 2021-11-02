@@ -1,12 +1,19 @@
 import React from "react";
 import "./Home.scss"
+import BestIceCream from "./BestIceCream/BestIceCream";
+
 
 const Home = () => {
 
   return(
     <>
-      <div className="iceCream_main"><img src="https://blog.kakaocdn.net/dn/J5Hqm/btrjDfR0NrQ/p2ZCKBkPGx2zyx1Y5yQz80/img.gif"/></div>
-      <div>여기는 홈이다</div>
+      <div className="iceCream_main"></div>
+      <div className="iceCream_rank">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdglP4B%2FbtrjJyKwowH%2F64pizKQ1yXOdfNudiMUWuK%2Fimg.png"/>
+      </div>
+      <div className="best_rank">
+      <BestIceCream/>
+      </div>
     </>
   )
 }
