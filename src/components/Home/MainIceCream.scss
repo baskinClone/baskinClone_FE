@@ -16,8 +16,9 @@
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
+  height: 300px;
+  &::-webkit-scrollbar{
+    display: none;
+  }
 }
 
-.categories::-webkit-scrollbar {
-  display: none;
-}

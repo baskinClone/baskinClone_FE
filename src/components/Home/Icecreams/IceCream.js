@@ -13,4 +13,4 @@ const IceCream = () => {
     </>
   )
 }
-export default Icecreams;
+export default IceCream;
