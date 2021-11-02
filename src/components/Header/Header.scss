@@ -1,10 +1,46 @@
-.login-form{
-  font-family: 'NanumGothic';
+@import "../../common/colors.scss";
+@import "../../common/font.scss";
+
+
+
+.nav-bar {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
   font-size: 13px;
+  font-weight: 600;
+  font-family: $nav-Barun;
+  cursor: pointer;
+  &:hover .nav-menu{
+    display: block;
+  }
 }
 
-@font-face {
-  font-family: 'NanumGothic';
+.nav-menu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nav{
+  letter-spacing: 1px;
+
+}
+
+.nav:nth-child(4){
+  letter-spacing: -0.4px;
+}
+
+.login{
+  color: $baskin-color;
+  font-size: 12px;
+  margin-right: 50px;
+  font-family: $nav-NanumBold;
   font-weight: 300;
-  src: url("../../common/font/NanumGothic.ttf")
+}
+.login:nth-child(2){
+  color: $gray-color;
+  font-family: $nav-NanumBold;
 }
