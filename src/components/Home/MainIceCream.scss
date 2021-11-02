@@ -1,0 +1,23 @@
+.iceCream_main {
+  background: url("https://blog.kakaocdn.net/dn/J5Hqm/btrjDfR0NrQ/p2ZCKBkPGx2zyx1Y5yQz80/img.gif");
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+}
+
+
+
+.iceCream_rank{
+  margin-top: 70px;
+  text-align: center;
+  color: #9198b7;
+}
+.categories {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}

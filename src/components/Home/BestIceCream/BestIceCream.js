@@ -1,13 +1,14 @@
 import React from "react";
 import "./BestIceCream.scss"
-import {scrollMenu} from 'react-horizontal-scrolling-menu';
+import {ScrollMenu} from 'react-horizontal-scrolling-menu';
 
-const BestIceCream = () => {
+
+const BestIceCream = ({}) => {
 
 
   return (
     <>
-
+    <ScrollMenu wheel={true}>
       <div className="monthly-ice">
 
         <ul className="rank_ice">
@@ -152,6 +153,7 @@ const BestIceCream = () => {
         </ul>
 
         </div>
+    </ScrollMenu>
     </>
   )
 }

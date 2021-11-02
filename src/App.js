@@ -3,7 +3,7 @@ import './App.scss';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 //페이지
-import Home from "./components/Home/Home";
+import IceCream from "./components/Home/MainIceCream";
 import Header from "./components/Header/Header";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={IceCream} />
       </Router>
     </div>
     </>

@@ -7,16 +7,14 @@
   height: 260px;
   display: flex;
   justify-content: space-between;
-  column-gap: 50px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin: auto;
 }
+
 
 
 .ice_list {
   display: flex;
   margin-top: 20px;
+  margin-left: 50px;
 }
 
 .iceCream_rank:first-child > img {
@@ -82,10 +80,10 @@
 .iceCream_name {
   width: 100px;
   height: 20px;
-  margin-left: 48px;
+  margin-left: 95px;
   margin-top: 30px;
   font-size: 12px;
   font-family: $nav-Barun;
   color: #918983;
-  position: static;
+
 }
