@@ -3,8 +3,7 @@ import "./BestIceCream.scss"
 
 
 
-const BestIceCream = () => {
-
+const BestIceCream = ({url, name, rank, rank_img}) => {
 
   return (
     <>
@@ -13,143 +12,21 @@ const BestIceCream = () => {
         <ul className="rank_ice">
           <li className="ice_list">
             <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
+              <div className="rank_img" >
+                <img src={rank_img}/>
+                <div className="rank_num">{rank}</div>
               </div>
               <div className="rank_cone">
                 <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
+                     src={url}/>
               </div>
             </div>
           </li>
-          <span className="iceCream_name">엄마는 외계인</span>
+          <div className="iceCream_name">
+          <span >{name}</span>
+          </div>
         </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
-        <ul className="rank_ice">
-          <li className="ice_list">
-            <div className="ranking_ice">
-              <div className="rank_img">
-                <span className="rank_num">1위</span>
-              </div>
-              <div className="rank_cone">
-                <img className="rank_iceCream"
-                     src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FUJKGR%2FbtrjEp2npM0%2FBVffBwMGdHLYHNF7tObaSK%2Fimg.png"/>
-              </div>
-            </div>
-          </li>
-          <span className="iceCream_name">엄마는 외계인</span>
-        </ul>
+
         </div>
     </>
   )

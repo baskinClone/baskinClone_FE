@@ -1,16 +1,30 @@
-import React, {useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "./MainIceCream.scss"
 import BestIceCream from "./BestIceCream/BestIceCream";
 import IceCream from "./Icecreams/IceCream";
 import Pagination from "react-js-pagination";
+import {useDispatch, useSelector} from "react-redux";
+import {getBestIceCream} from "../../redux/icecream/icecream";
+
 
 
 const Home = () => {
+  const dispatch = useDispatch();
+
 
   const [page, setPage] = useState(1);
   const scrollRef = useRef(null);
   const [isDrag, setIsDrag] = useState(false);
   const [startX, setStartX] = useState();
+
+  useEffect(() => {
+    dispatch(getBestIceCream())
+  },[dispatch]);
+
+  //Monthly Best IceCream 데이터 가져오기
+  const ice_data = useSelector((state)=> state.iceCream.data[0].monthlyBest);
+  //아이스크림 다 가져오기
+  const all_ice = useSelector((state)=> state.iceCream.data[0].icecreams);
 
 
   const onDragStart = (e) => {
@@ -44,6 +58,8 @@ const Home = () => {
   };
   const onThrottleDragMove = throttle(onDragMove);
 
+
+
   return(
     <>
       <div className="iceCream_main"></div>
@@ -57,12 +73,19 @@ const Home = () => {
                     onMouseUp={onDragEnd}
                     onMouseLeave={onDragEnd}
                     ref={scrollRef}>
-      <BestIceCream/>
+          {ice_data&&ice_data.map((ice) => (
+            <BestIceCream url={ice.imgUrl} name={ice.name} rank={ice.rank} rank_img={ice.rankLabelUrl} />
+          ))}
+
         </div>
+
         <div className="ice-title">
           <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYU2I3%2FbtrjJk7kWzQ%2FBDwUpVMBpKPUoCq5txKQO0%2Fimg.png"/>
         </div>
-        <IceCream/>
+        <div className="all_ice">
+          {all_ice && all_ice.map}
+          <IceCream/>
+        </div>
       </div>
       <Pagination
         activePage={page}

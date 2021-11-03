@@ -1,20 +1,5 @@
 import React from "react";
 import "./Header.scss";
-import {motion} from "framer-motion";
-
-const containerVariants = {
-  hidden: {
-    opacity: 1,
-    y: '100vw'
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 2
-    }
-  }
-}
 
 
 
@@ -22,7 +7,10 @@ const Header = () => {
 
   return(
     <>
-      <div><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGsXYq%2FbtrjBw75AIK%2FonhIS6EdYkPsP68Jjj6MO1%2Fimg.png"/></div>
+      <div>
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGsXYq%2FbtrjBw75AIK%2FonhIS6EdYkPsP68Jjj6MO1%2Fimg.png"
+        alt="이미지"/>
+      </div>
       <ul className="nav-bar">
         <li> <span className="login">LOGIN</span>
           <span className="login">JOIN</span></li>

@@ -1,6 +1,6 @@
 import React from "react";
 import './App.scss';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 //페이지
 import IceCream from "./components/Home/MainIceCream";
