@@ -3,8 +3,11 @@ import './App.scss';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 //페이지
-import IceCream from "./components/Home/MainIceCream";
 import Header from "./components/Header/Header";
+import MainiceCream from "./components/Menu_IceCream/MainIceCream";
+import IceCreamCake from "./components/Menu_IceCreamCake/IceCreamCake";
+import Footer from "./components/Footer/Footer";
+import Beverage from "./components/Menu_Beverage/Beverage";
 
 function App() {
   return (
@@ -12,7 +15,11 @@ function App() {
     <div className="App">
       <Router>
         <Header/>
-        <Route path="/" exact component={IceCream} />
+        <Route path="/" exact component={MainiceCream} />
+        <Route path="/icecream" exact component={MainiceCream} />
+        <Route path="/cake" exact component={IceCreamCake} />
+        <Route path="/beverage" exact component={Beverage} />
+        <Footer/>
       </Router>
     </div>
     </>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.scss";
 
+import {NavLink} from "react-router-dom";
 
 
 const Header = () => {
@@ -8,6 +9,24 @@ const Header = () => {
   return(
     <>
       <div className = "nav-logo">
+        <ul className="nav-icons">
+          <li className="nav-icon">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FchJjjX%2FbtrjXCFLvkf%2FhPHrQNSc7eqK0rxEt9EDJk%2Fimg.png"/>
+          </li>
+          <li className="nav-icon">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKykMb%2FbtrjYhai8Ov%2FIcfvkl6nl0lhQqFhrrva0k%2Fimg.png"/>
+          </li>
+          <li className="nav-icon">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcNTv09%2FbtrjXFCq1d7%2Fj3bMKAa2LLsPKuub41Uh20%2Fimg.png"/>
+          </li>
+          <li className="nav-icon">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FL231J%2FbtrjXEQ4YtJ%2FiAkPQPS5k8yuE4wDRFbWRk%2Fimg.png"/>
+          </li>
+          <li className="nav-icon">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpNy1w%2FbtrjXCFLvkm%2FHqxtquwWZ8ZyEmCtZFEx1K%2Fimg.png"/>
+          </li>
+
+        </ul>
         <div className="logo">
         <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGsXYq%2FbtrjBw75AIK%2FonhIS6EdYkPsP68Jjj6MO1%2Fimg.png"
              alt="이미지"/>
@@ -31,9 +50,15 @@ const Header = () => {
               <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcFpr8f%2FbtrjDgEML2i%2FK201Zqrx66GYwkfHyM8epK%2Fimg.jpg"/></div>
             </li>
             <li className="sub-nav">
+              <NavLink to={"/icecream"}>
               <li className="menu-nav">아이스크림</li>
+              </NavLink>
+              <NavLink to={"/cake"}>
               <li className="menu-nav">아이스크림케이크</li>
+              </NavLink>
+              <NavLink to={"/beverage"}>
               <li className="menu-nav">음료</li>
+              </NavLink>
               <li className="menu-nav">커피</li>
               <li className="menu-nav">디저트</li>
             </li>

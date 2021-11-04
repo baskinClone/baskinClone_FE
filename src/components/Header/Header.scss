@@ -7,21 +7,30 @@
   background-size: 100% 1100px;
   background-repeat: no-repeat;
   background-position: center;
-  filter: brightness(108%);
+  //filter: brightness(108%);
   width: 100vw;
   height: 122px;
   border-top: 3px solid #ff7c98;
 }
 .logo{
-
   text-align: center;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .logo>img{
   width: 80px;
   filter: brightness(100%);
 }
+.nav-icons {
+  display: flex;
+  border: 1px solid black;
+  width: 300px;
+  justify-content: space-around;
 
+}
+//.nav-icon>img{
+//  //width: 35px;
+//
+//}
 
 .nav-bar {
   width: 100%;

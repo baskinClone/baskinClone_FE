@@ -1,6 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {getBestIceCream} from "./icecream";
 
+
 const initialState={
   bestIce:[],
   allIcecream:[],
