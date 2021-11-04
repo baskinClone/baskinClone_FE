@@ -3,9 +3,10 @@ import Api from "../../common/apis/Api"
 
 export const getBestIceCream = createAsyncThunk(
   "iceCream/getBestIceCream",
-  async () => {
+  async ({page}) => {
+
     const response = await Api.get(
-      `getIcecream`,
+      `getIcecream?page=${page}`,
     );
     return response.data;
   }

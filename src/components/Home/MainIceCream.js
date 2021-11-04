@@ -18,13 +18,20 @@ const Home = () => {
   const [startX, setStartX] = useState();
 
   useEffect(() => {
-    dispatch(getBestIceCream())
+    dispatch(getBestIceCream({page}))
   },[dispatch]);
 
   //Monthly Best IceCream 데이터 가져오기
-  const ice_data = useSelector((state)=> state.iceCream.data[0].monthlyBest);
+  const ice_data = useSelector((state)=> state.iceCream.bestIce);
+
   //아이스크림 다 가져오기
-  const all_ice = useSelector((state)=> state.iceCream.data[0].icecreams);
+  const all_ice = useSelector((state)=> state.iceCream.allIcecream);
+  console.log(all_ice)
+
+
+  const a = useSelector((state)=> state.iceCream);
+  console.log(a)
+
 
 
   const onDragStart = (e) => {
@@ -58,6 +65,12 @@ const Home = () => {
   };
   const onThrottleDragMove = throttle(onDragMove);
 
+  const handlePageChange = (page) => {
+    setPage(page);
+    dispatch(getBestIceCream({
+      page
+    }))
+  };
 
 
   return(
@@ -74,7 +87,11 @@ const Home = () => {
                     onMouseLeave={onDragEnd}
                     ref={scrollRef}>
           {ice_data&&ice_data.map((ice) => (
-            <BestIceCream url={ice.imgUrl} name={ice.name} rank={ice.rank} rank_img={ice.rankLabelUrl} />
+            <BestIceCream
+              url={ice.imgUrl}
+              name={ice.name}
+              rank={ice.rank}
+              rank_img={ice.rankLabelUrl} />
           ))}
 
         </div>
@@ -82,9 +99,11 @@ const Home = () => {
         <div className="ice-title">
           <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FYU2I3%2FbtrjJk7kWzQ%2FBDwUpVMBpKPUoCq5txKQO0%2Fimg.png"/>
         </div>
-        <div className="all_ice">
-          {all_ice && all_ice.map}
-          <IceCream/>
+        <div className="all_icecream">
+          {all_ice && all_ice.map((all) => (
+            <IceCream name={all.name} url={all.imgUrl} hashtags={all.hashtags} coneurl={all.coneUrl}/>
+          ))}
+
         </div>
       </div>
       <Pagination
@@ -93,7 +112,7 @@ const Home = () => {
         totalItemsCount={20}
         pageRangeDisplayed={8}
         prevPageText={"‹"} nextPageText={"›"}
-        // onChange={handlePageChange}
+        onChange={handlePageChange}
       />
     </>
   )

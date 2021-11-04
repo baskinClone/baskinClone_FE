@@ -2,7 +2,8 @@ import {createSlice} from "@reduxjs/toolkit";
 import {getBestIceCream} from "./icecream";
 
 const initialState={
-  data: [{}],
+  bestIce:[],
+  allIcecream:[],
 }
 
 export const icecreamSlice = createSlice({
@@ -13,8 +14,8 @@ export const icecreamSlice = createSlice({
   },
   extraReducers:{
     [getBestIceCream.fulfilled]: (state, action) => {
-      state.data = action.payload.data;
-
+      state.bestIce = action.payload.bestIce;
+      state.allIcecream = action.payload.allIcecream;
     },
   },
 });

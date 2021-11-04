@@ -2,6 +2,27 @@
 @import "../../common/font.scss";
 
 
+.nav-logo{
+  background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fdf5XUK%2FbtrjSabh4FY%2FeQ8iWLaLT1qDYxEuPn2PV1%2Fimg.jpg");
+  background-size: 100% 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(108%);
+  width: 100vw;
+  height: 122px;
+  border-top: 3px solid #ff7c98;
+}
+.logo{
+
+  text-align: center;
+  padding-top: 20px;
+}
+.logo>img{
+  width: 80px;
+  filter: brightness(100%);
+}
+
+
 .nav-bar {
   width: 100%;
   height: 40px;
@@ -15,13 +36,28 @@
   border-bottom: 1px solid #693337;
   border-top: 1px solid #e2d9d6;
   line-height: 40px;
+
   &:hover .nav-menu{
+    animation: slide-up 500ms ease-out;
     display: block;
   }
 }
 
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }}
+
+
+
 .nav{
   letter-spacing: 1px;
+  font-size: 11.5px;
 }
 
 .nav:nth-child(4){
@@ -42,7 +78,7 @@
 .nav-menu {
   width: 100%;
   display: none;
-  height: 200px;
+  height: 100px;
   position: absolute;
   margin-top: 41px;
 }
@@ -59,7 +95,9 @@
 .happy-point {
   border: 1px solid black;
 }
-
-.sub-nav:first-child{
-
+.sub-nav{
+  font-size: 12px;
+  font-family: $nav-Barun;
+  font-weight: 300;
+  color: #a49993;
 }
