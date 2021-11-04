@@ -25,17 +25,25 @@ const Header = () => {
           <li className="nav-icon">
             <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpNy1w%2FbtrjXCFLvkm%2FHqxtquwWZ8ZyEmCtZFEx1K%2Fimg.png"/>
           </li>
-
         </ul>
         <div className="logo">
         <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbGsXYq%2FbtrjBw75AIK%2FonhIS6EdYkPsP68Jjj6MO1%2Fimg.png"
              alt="이미지"/>
         </div>
+        <ul className="nav-info">
+          <li className="info">고객센터</li>
+          <li className="info">CONTACT US</li>
+          <li className="info">
+            <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbIzyTI%2FbtrjWVMmQZa%2FQcFgPtDmlWK1akKPNs7Xo0%2Fimg.png"/>
+          </li>
+        </ul>
       </div>
-
+<div className="main-nav">
       <ul className="nav-bar">
-        <li> <span className="login">LOGIN</span>
-          <span className="login">JOIN</span></li>
+        <li className="nav-login">
+          <span className="login">LOGIN</span>
+          <span className="login">JOIN</span>
+        </li>
         <li className="nav">FLAVOR OF THE MONTH</li>
         <li className="nav">MENU</li>
         <li className="nav">영양 성분 및 알레르기</li>
@@ -44,10 +52,10 @@ const Header = () => {
         <li className="nav">ABOUT</li>
         <div className="nav-menu">
           <ul  className="nav-menus">
+            <ul className="sub-navs">
             <li className="sub-nav">
-              <div className="nav-img">
-                <img className="happy-point" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb8N0Lo%2FbtrjD2sIPDX%2F72GWIUzJRbROLjy8Xedbt1%2Fimg.jpg"/>
-              <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcFpr8f%2FbtrjDgEML2i%2FK201Zqrx66GYwkfHyM8epK%2Fimg.jpg"/></div>
+              <img className="happy-point" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb8N0Lo%2FbtrjD2sIPDX%2F72GWIUzJRbROLjy8Xedbt1%2Fimg.jpg"/>
+              <img className="cheese-tree" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcFpr8f%2FbtrjDgEML2i%2FK201Zqrx66GYwkfHyM8epK%2Fimg.jpg"/>
             </li>
             <li className="sub-nav">
               <NavLink to={"/icecream"}>
@@ -83,12 +91,13 @@ const Header = () => {
               <li className="about-nav">점포개설문의</li>
               <li className="about-nav">CONTACT US</li>
             </li>
-
+            </ul>
           </ul>
+
         </div>
       </ul>
 
-
+</div>
     </>
   )
 }

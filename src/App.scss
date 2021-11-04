@@ -1,4 +1,5 @@
 @import "src/common/colors.scss";
+@import "src/common/grid-templete.scss";
 
 *{
   margin: 0;
@@ -10,7 +11,14 @@ ul{
   padding-left:0px;
 }
 
-a:link {  text-decoration: none;}
+a:link {
+  text-decoration: none;
+}
 a:visited {
-  color: $gray-color;
-  text-decoration: none;}
+  color: #948780;
+  text-decoration: none;
+  &:hover{
+    color:$baskin-color;
+  }
+
+}
