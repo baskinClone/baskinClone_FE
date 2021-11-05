@@ -1,0 +1,18 @@
+
+.Dessert_main {
+  background: url("https://blog.kakaocdn.net/dn/kDJ1N/btrj4WxeTaL/36waZOsave41cJnKAdH7qk/img.gif");
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+}
+
+.ice-title{
+  margin-top: 70px;
+}
+.mainDessert{
+  text-align: center;
+  margin-left: 412px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+}
+
