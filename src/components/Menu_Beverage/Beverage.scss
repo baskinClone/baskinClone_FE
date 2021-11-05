@@ -1,0 +1,22 @@
+
+
+.Beverage_main {
+  background: url("https://blog.kakaocdn.net/dn/eCGf88/btrjRkmPymF/HucKJWirI4SojNG3ebyRt1/img.gif");
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+}
+
+.ice-title{
+  margin-top: 70px;
+}
+.mainBeverage{
+  text-align: center;
+  margin-left: 19%;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+}
+
+.iceCake-title{
+  text-align: center;
+}

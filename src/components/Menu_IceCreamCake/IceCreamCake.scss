@@ -1,0 +1,21 @@
+.iceCake_main {
+  background: url("https://blog.kakaocdn.net/dn/d4imQf/btrjRkzs8lg/nAcKgkRzmrWcG2iPp3uL21/img.gif");
+  background-size: cover;
+  background-position: center;
+  height: 280px;
+
+}
+.iceCake-title{
+  margin-top: 70px;
+}
+
+.mainCake{
+  text-align: center;
+  margin-left: 19%;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+}
+
+.iceCake-title{
+  text-align: center;
+}
