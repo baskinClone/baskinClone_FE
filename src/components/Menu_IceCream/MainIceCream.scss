@@ -1,17 +1,17 @@
 @import "src/common/pagination.scss";
 
 .iceCream_main {
-  background: url("https://blog.kakaocdn.net/dn/J5Hqm/btrjDfR0NrQ/p2ZCKBkPGx2zyx1Y5yQz80/img.gif");
+  background-image: url("https://blog.kakaocdn.net/dn/J5Hqm/btrjDfR0NrQ/p2ZCKBkPGx2zyx1Y5yQz80/img.gif");
   background-size: cover;
   background-position: center;
   height: 280px;
 }
+
 .ice-title{
- margin: -10px 0 20px 0;
+ margin: -10px 0 40px 0;
   text-align: center;
   color: #9198b7;
 }
-
 
 .iceCream_rank{
   margin-top: 70px;
@@ -19,6 +19,7 @@
   text-align: center;
   color: #9198b7;
 }
+
 .categories {
   display: flex;
   overflow-x: scroll;
@@ -31,7 +32,7 @@
 
 .all_icecream{
   text-align: center;
-  margin-left: 19%;
+  margin-left: 412px;
   display: grid;
   grid-template-columns: repeat(4, 270px);
 

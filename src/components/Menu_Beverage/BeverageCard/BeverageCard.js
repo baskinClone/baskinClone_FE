@@ -12,7 +12,6 @@ const BeverageCard = ({name, url, hashtags}) => {
 
   return(
     <>
-      <div className="ice">
         <div className="Ice">
           <ul className="grid-ice">
             <li className="ice">
@@ -25,7 +24,7 @@ const BeverageCard = ({name, url, hashtags}) => {
             </li>
           </ul>
         </div>
-      </div>
+
     </>
   )
 }

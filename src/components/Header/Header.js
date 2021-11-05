@@ -67,8 +67,12 @@ const Header = () => {
               <NavLink to={"/beverage"}>
               <li className="menu-nav">음료</li>
               </NavLink>
+              <NavLink to={"/coffee"}>
               <li className="menu-nav">커피</li>
+              </NavLink>
+              <NavLink to={"/dessert"}>
               <li className="menu-nav">디저트</li>
+              </NavLink>
             </li>
             <li className="sub-nav">
               <li className="nutrient-nav">아이스크림</li>

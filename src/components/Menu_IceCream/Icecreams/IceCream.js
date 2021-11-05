@@ -21,7 +21,7 @@ const IceCream = ({name, url, hashtags, coneurl}) => {
 
   return(
     <>
-      <div className="ice">
+
         <div className="Ice">
           <ul className="grid-ice">
             <li className="ice">
@@ -37,7 +37,6 @@ const IceCream = ({name, url, hashtags, coneurl}) => {
             </li>
           </ul>
         </div>
-      </div>
     </>
   )
 }

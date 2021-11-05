@@ -43,3 +43,26 @@
 
 }
 
+.Ice:nth-child(1),
+.Ice:nth-child(5),
+.Ice:nth-child(9),
+.Ice:nth-child(13),
+.Ice:nth-child(17){
+  border-left: 1px solid $line-color;
+}
+
+.Ice:nth-child(1),
+.Ice:nth-child(2),
+.Ice:nth-child(3),
+.Ice:nth-child(4),{
+  border-top: 1px solid $line-color;
+}
+.Ice:nth-child(4n){
+  border-right: 1px solid $line-color;
+}
+.Ice:nth-child(17),
+.Ice:nth-child(18),
+.Ice:nth-child(19),
+.Ice:nth-child(20){
+  border-bottom: 1px solid $line-color;
+}

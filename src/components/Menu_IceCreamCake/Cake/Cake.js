@@ -14,7 +14,7 @@ const Cake = ({name, url, hashtags}) => {
 
   return(
     <>
-        <div className="ice">
+
           <div className="Ice">
             <ul className="grid-ice">
               <li className="ice">
@@ -27,7 +27,6 @@ const Cake = ({name, url, hashtags}) => {
               </li>
             </ul>
           </div>
-        </div>
       </>
   )
 }

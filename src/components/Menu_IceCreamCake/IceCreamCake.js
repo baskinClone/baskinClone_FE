@@ -7,7 +7,6 @@ import {getIceCreamCake} from "../../redux/icecreamcake/icecreamcake";
 import Pagination from "react-js-pagination";
 import {getFirstHidden} from "web-vitals/dist/modules/lib/getFirstHidden";
 
-import {getBeverage} from "../../redux/Beverage/beverage";
 
 const IceCreamCake = () => {
   const dispatch = useDispatch();

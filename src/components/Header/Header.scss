@@ -4,7 +4,7 @@
 
 .nav-logo {
   background: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb1O48U%2FbtrjWVr6H8I%2FShaVz09G475P0Rea24T8O0%2Fimg.jpg");
-  background-size: 100% 1100px;
+  background-size: 1900px 1100px;
   background-repeat: no-repeat;
   background-position: center;
   height: 122px;
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #e2d9d6;
+  overflow-x: hidden;
 
 }
 
@@ -55,6 +56,7 @@
   margin-right: 220px;
   white-space: nowrap;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .info {
@@ -85,6 +87,7 @@
   cursor: pointer;
   line-height: 40px;
   white-space: nowrap;
+  overflow-x: hidden;
 }
 
 
@@ -161,7 +164,7 @@
   position: absolute;
   margin-left: -170px;
   margin-top: 41px;
-  width: 1920px;
+  width: 1940px;
 }
 
 .nav-menus {
@@ -226,3 +229,4 @@
   margin-left: -45px;
   margin-right: 425px;
 }
+

@@ -1,6 +1,98 @@
+@import "./src/common/font.scss";
+@import "./src/common/colors.scss";
+
 .Footer {
-  width: 100%;
   height: 50px;
   border-top: 1px solid #feaf2b;
   margin-top: 200px;
+  width: 1890px;
+
+}
+
+.footer_menu{
+  width: 54%;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto 30px auto;
+  font-family: $nav-Barun;
+  font-size: 13px;
+  color: #726454;
+  letter-spacing: -1px;
+}
+.footer_menu>li:nth-child(5){
+  color: $baskin-color;
+  font-family: $nav-NanumBold;
+}
+
+
+.middle-footer{
+height: 75px;
+  background-color:#f9f8f7;
+}
+
+.mid-footer{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  margin: auto;
+}
+.mid-footer>li{
+  padding-top: 20px;
+
+}
+.dropDown>ul{
+  margin-top: -205px;
+}
+
+
+.dropBtn{
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: $nav-Barun;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+  margin-top: 18px;
+  line-height: 32px;
+  color: $font-color;
+  font-size: 10px;
+  border: 1px solid #d1cecc;
+}
+
+.click_arrow{
+  color: #ffae27;
+
+}
+
+.hidden_drop{
+  background-color: #ffffff;
+  font-family: $nav-Barun;
+  font-size: 13px;
+  color: #726454;
+  border: 1px solid #d1cecc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom: none;
+}
+
+.hidden_drop>li{
+  margin-bottom: 8px;
+  padding-left: 10px;
+
+}
+.hidden_drop>li:first-child{
+margin-top: 8px;
+
+}
+
+.footer_info{
+  height: 230px;
+  background: url("https://blog.kakaocdn.net/dn/lEGBM/btrjYioRUeP/KCEXkRKUw49gpWNBuqIy3K/img.png");
+  background-size: cover;
+  background-position: center;
+
 }
