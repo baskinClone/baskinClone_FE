@@ -6,4 +6,4 @@
 
 
 클론코딩 사이트
-http://baskincoding.s3-website.ap-northeast-2.amazonaws.com/#/beverage
+http://baskincoding.s3-website.ap-northeast-2.amazonaws.com/#/
