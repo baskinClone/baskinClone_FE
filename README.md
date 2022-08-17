@@ -1,6 +1,7 @@
 ## 🍦 Baskin Clone
 
 배스킨라빈스 클론코딩 입니다.
+http://baskinrobbins-clone.s3-website.ap-northeast-2.amazonaws.com/#/icecream
 
 ## 사용스택
 
